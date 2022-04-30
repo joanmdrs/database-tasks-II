@@ -1,5 +1,4 @@
 #Questão 04
-SELECT f.nome, f.salario, d.descricao, d.codigo
-from funcionario as f
-INNER JOIN departamento as d
-where f.codigo <> d.cod_gerente and d.codigo = f.cod_dep
+SELECT nome, salario, cod_dep
+from funcionario 
+WHERE codigo NOT IN (SELECT cod_gerente from departamento)
