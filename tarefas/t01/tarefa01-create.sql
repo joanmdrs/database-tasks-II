@@ -22,7 +22,7 @@ CREATE TABLE departamento(
 );
 
 #Adicionando a coluna cod_dep e definindo-a como chave estrangeira
-ALTER TABLE funcionario ADD COLUMN cod_dep;
+ALTER TABLE funcionario ADD COLUMN cod_dep INT;
 ALTER TABLE funcionario ADD FOREIGN KEY (cod_dep) REFERENCES departamento(codigo);
 
 #Table projeto
@@ -64,8 +64,3 @@ CREATE TABLE atividade_projeto(
   FOREIGN KEY(cod_atividade) REFERENCES atividade(codigo)
   
 );
-
-
-
-
-
