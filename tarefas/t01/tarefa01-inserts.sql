@@ -18,10 +18,10 @@ VALUES("Departamento de Computação e Tecnologia", 1),
 
 #Atualizando o código dos departamentos da tabela funcionario
 UPDATE funcionario SET cod_dep = 1 WHERE codigo = 1;
-UPDATE funcionario SET cod_dep = 2 WHERE codigo = 4;
-UPDATE funcionario SET cod_dep = 3 WHERE codigo = 5;
-UPDATE funcionario SET cod_dep = 4 WHERE codigo = 3;
-UPDATE funcionario SET cod_dep = 5 WHERE codigo = 2;
+UPDATE funcionario SET cod_dep = 2 WHERE codigo = 2;
+UPDATE funcionario SET cod_dep = 3 WHERE codigo = 3;
+UPDATE funcionario SET cod_dep = 4 WHERE codigo = 4;
+UPDATE funcionario SET cod_dep = 5 WHERE codigo = 5;
 UPDATE funcionario SET cod_dep = 2 WHERE codigo = 6;
 UPDATE funcionario SET cod_dep = 1 WHERE codigo = 7;
 
