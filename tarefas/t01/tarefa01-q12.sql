@@ -1,6 +1,6 @@
-#Questão 10
+#Questão 12
 SELECT 
-	  p.nome, 
+    p.nome, 
     p.data_inicio, 
     p.data_fim, 
     a.descricao, 
