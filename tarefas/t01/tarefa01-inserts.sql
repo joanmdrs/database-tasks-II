@@ -6,7 +6,8 @@ VALUES("Joan de Azevedo Medeiros", 'M', '2000-12-11', 5000.00, NULL),
 ("Deyse de Azevedo Paiva", 'F', '2000-05-09', 3000.00, NULL),
 ("Thaynara de Azevedo Luciano", 'F', '2000-12-03', 10000.00, NULL),
 ("Mykael de Azevedo Medeiros", 'M', '2002-06-26', 3000.00, NULL),
-("Marinalva de Azevedo Santos Medeiros", 'F', '1980-07-11', 4000.00, NULL);
+("Marinalva de Azevedo Santos Medeiros", 'F', '1980-07-11', 4000.00, NULL),
+("Carlos Eduardo da Silva Azevedo", 'M', '2003-03-03', 2000.00, NULL);
 
 #Povoando a tabela departamento
 INSERT INTO departamento (descricao, cod_gerente)
@@ -18,10 +19,10 @@ VALUES("Departamento de Computação e Tecnologia", 1),
 
 #Atualizando o código dos departamentos da tabela funcionario
 UPDATE funcionario SET cod_dep = 1 WHERE codigo = 1;
-UPDATE funcionario SET cod_dep = 2 WHERE codigo = 2;
-UPDATE funcionario SET cod_dep = 3 WHERE codigo = 3;
-UPDATE funcionario SET cod_dep = 4 WHERE codigo = 4;
-UPDATE funcionario SET cod_dep = 5 WHERE codigo = 5;
+UPDATE funcionario SET cod_dep = 4 WHERE codigo = 2;
+UPDATE funcionario SET cod_dep = 5 WHERE codigo = 3;
+UPDATE funcionario SET cod_dep = 3 WHERE codigo = 4;
+UPDATE funcionario SET cod_dep = 2 WHERE codigo = 5;
 UPDATE funcionario SET cod_dep = 2 WHERE codigo = 6;
 UPDATE funcionario SET cod_dep = 1 WHERE codigo = 7;
 
@@ -43,8 +44,8 @@ VALUES("Implementar os casos de uso", "Criar todos os casos de uso do sistema e 
 
 #Povoando a tabela atividade_projeto
 INSERT INTO atividade_projeto(cod_projeto, cod_atividade)
-VALUES(1, 1),
-(2, 3),
+VALUES(1, 3),
+(2, 1),
 (3, 4),
 (4, 5),
 (5, 2)
