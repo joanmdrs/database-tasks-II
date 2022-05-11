@@ -7,7 +7,7 @@ from funcionario as f
 WHERE f.codigo IN (SELECT cod_responsavel from projeto)
 
 #Fazendo a consulta
-SELECT f.nome, f.salario
+SELECT f.nome
 from funcionario as f 
 JOIN vwResponsaveis as vr
 ON f.codigo = vr.responsavel 
