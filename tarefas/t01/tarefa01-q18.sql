@@ -1,6 +1,15 @@
 #Questão 18
-SELECT f.nome, d.descricao from funcionario as f
-LEFT JOIN departamento as d 
-ON f.cod_dep = d.codigo
-Group by f.cod_dep 
-ORDER by f.salario
+#Criando a VIEW 
+CREATE VIEW vwInfoFuncionario (salario, codDepto)
+AS SELECT MAX(f.salario), d.codigo
+from funcionario as f, departamento as d 
+WHERE f.cod_dep = d.codigo
+GROUP BY d.codigo;
+
+#Fazendo a consulta
+SELECT f.nome, d.descricao
+FROM funcionario as f, departamento as d, vwInfoFuncionario as vf
+WHERE f.cod_dep = vf.codDepto 
+and f.salario = vf.salario
+and d.codigo = vf.codDepto
+GROUP BY f.nome;
