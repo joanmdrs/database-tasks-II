@@ -1,5 +1,8 @@
-CREATE ROLE usu WITH LOGIN SUPERUSER CREATEDB CREATEROLE INHERIT;
+#7 - Crie um usuário com nome administrador e conceda a ele todos os privilégios em um banco de dados.
 
-ALTER USER usu RENAME TO administrador2;
+CREATE USER admin;
 
-ALTER ROLE administrador2 PASSWORD 'admin2';
+ALTER ROLE admin
+	SUPERUSER
+	CREATEDB
+	CREATEROLE;
