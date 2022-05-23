@@ -4,11 +4,8 @@
 # de informação, considere que o avião caiu).
 
 # Criando o TRIGGER
-CREATE TRIGGER deleteAllPassageiros BEFORE
+CREATE TRIGGER deleteAllPassengers BEFORE
 DELETE on voo 
 for each ROW 
 DELETE FROM cliente_voo 
 WHERE cliente_voo.cod_voo = OLD.codigo;
-
-# Deletando o voo de código = 1
-DELETE FROM voo WHERE codigo = 1;
