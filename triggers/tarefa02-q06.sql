@@ -4,7 +4,7 @@
 # percorrida em um voo).
 
 # Criando o Trigger
-create trigger sumMilhas after
+create trigger sumMileages after
 insert ON cliente_voo
 FOR EACH ROW
 UPDATE milhas SET quantidade = quantidade + 
