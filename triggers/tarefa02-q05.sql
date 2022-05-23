@@ -14,4 +14,4 @@ VALUES ("Mykael de Azevedo Medeiros", 0);
 
 # Inserido um voo
 INSERT INTO voo(tipo, cod_piloto, num_passageiros, distancia)
-VALUES ("Econômico", 1, 100, 1000.00);
+VALUES ("Econômico", 1, 0, 1000.00);
