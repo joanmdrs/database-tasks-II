@@ -1,0 +1,3 @@
+CREATE ROLE joan;
+
+GRANT INSERT, DELETE, UPDATE ON funcionario TO joan;
