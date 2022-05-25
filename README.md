@@ -1,4 +1,4 @@
-# Consultas Aninhadas 
+# Bando de Dados II - Tarefas
 
 Repositório para a disciplina Projeto e Administração de Banco de Dados
 
