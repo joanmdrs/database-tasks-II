@@ -1,0 +1,1 @@
+REVOKE DELETE ON funcionario FROM joan;
