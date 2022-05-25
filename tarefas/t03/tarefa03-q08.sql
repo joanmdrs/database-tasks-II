@@ -11,3 +11,8 @@ ALTER ROLE usu
 	
 ALTER ROLE adiministrador2 WITH ENCRYPTED PASSWORD 'admin2';
 
+DROP USER adiministrador2;
+
+
+
+
