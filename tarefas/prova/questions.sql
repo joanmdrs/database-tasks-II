@@ -66,3 +66,27 @@ LANGUAGE 'plpgsql';
 
 SELECT * FROM relatorio();
 
+6. 
+Index representa um recurso do SQL que possui a finalidade de ordenar dados
+em uma determinada sequência, afim de retornar os resultados de maneira mais eficiente.
+Dessa forma, o index agiliza a recuperação das linhas em uma tabela. Quando é criado um index,
+o banco de dados irá criar uma estrutura de árvore ordenada para facilitar as buscas. 
+
+Eu criaria um index para todas as chaves primárias de esquema relacional, pois são campos de grande seletividade.
+
+Também criaria um index para os campos situacao de projeto e da atividade, 
+pois se eu quiser exibir um relatório contendo a situação dos projetos e das atividades vinculadas a ele.
+
+7. 
+Alguns dos tipos de índices do PostgreSQL são:     
+B-tree ,
+Hash ,
+GIN ,
+BRIN,
+GIST ,
+SP-GiST 
+
+O tipo de índice padrão do postgreSQL é o B-tree, o qual é o mais adequado para a maioria das situações comuns.
+
+8.
+
