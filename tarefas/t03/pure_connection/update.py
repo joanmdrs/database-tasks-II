@@ -1,4 +1,3 @@
-from datetime import date
 from connect import connectDataBase
     
 conn = connectDataBase()
