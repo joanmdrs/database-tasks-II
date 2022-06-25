@@ -1,32 +1,22 @@
-from models import Atividade
+from models import *
 from datetime import date
 from connection import connectDatabase, closeConnection
 
 connectDatabase()
 
-def createAtividade (dataConclusao, dataFim, dataInicio, descricao, situacao) :
+def createAtividade (codProjeto, dataFim, dataInicio, descricao) :
     Atividade.create(
-        dataconclusao = dataConclusao,
+        codprojeto = codProjeto,
         datafim = dataFim,
-        datainicio = dataInicio,
-        descricao = descricao,
-        situacao = situacao
+        datainicio = dataInicio, 
+        descricao = descricao
     )
     
-
-# def createAtividadeProjeto(codAtividade, codProjeto):
-#     AtividadeProjeto.create(
-#         codatividade = codAtividade,
-#         codprojeto = codProjeto
-#     )
-    
-
 createAtividade(
-    dataConclusao=date(2022, 12, 1), 
+    codProjeto = 1,
     dataFim=date(2022, 12,15), 
     dataInicio = date(2022,6,24), 
     descricao="Fazer a lista de exercícios",
-    situacao="Em andamento"
 )
 
 closeConnection()
