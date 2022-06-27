@@ -1,6 +1,21 @@
-# Tarefa 03
-
 ## Scripts
+
+### ODBC 
+
+- [Conexão ODBC](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/odbc/connect.py)
+- [Questão 05 - Letra a)](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/odbc/insert.py)
+- [Questão 05 - Letra b)](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/odbc/update.py)
+- [Questão 05 - Letra c)](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/odbc/select.py)
+
+### ORM 
+
+- [Models](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/orm/models.py)
+- [Conexão ORM](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/orm/connect.py)
+- [Questão 06 - Letra a)](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/orm/insert.py)
+- [Questão 06 - Letra b)](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/orm/update.py)
+- [Questão 06 - Letra c)](https://github.com/joanmdrs/database-tasks-II/blob/main/tarefas/t03/orm/select.py)
+
+
 
 ## Resumo sobre ODBC na linguagem que escolheu
 
