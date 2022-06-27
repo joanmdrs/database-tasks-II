@@ -1,6 +1,5 @@
 import psycopg2
 
-
 #configurações
 
 host = 'localhost'

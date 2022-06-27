@@ -1,5 +1,5 @@
 from models import *
-from connection import connectDatabase, closeConnection
+from connect import connectDatabase, closeConnection
 
 connectDatabase()
 

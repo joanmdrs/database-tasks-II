@@ -1,6 +1,6 @@
 from models import *
 from datetime import date
-from connection import connectDatabase, closeConnection
+from connect import connectDatabase, closeConnection
 
 connectDatabase()
 
