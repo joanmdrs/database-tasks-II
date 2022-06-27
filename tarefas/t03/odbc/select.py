@@ -6,15 +6,35 @@ cur = conn.cursor()
 def selectProjetoJoinAtividades():
     
     select_script = '''
-        SELECT projeto.codigo, projeto.descricao, atividade.descricao
-        FROM projeto INNER JOIN atividade      
-        ON projeto.codigo = atividade.codprojeto;
+        SELECT 
+            Projeto.codigo,
+            Projeto.nome, 
+            Projeto.descricao,
+            Projeto.codresponsavel,
+            Projeto.coddepto,
+            Projeto.datainicio, 
+            Projeto.datafim,
+            Atividade.codigo,
+            Atividade.descricao,
+            Atividade.codprojeto,
+            Atividade.datainicio, 
+            Atividade.datafim
+        FROM Projeto INNER JOIN Atividade      
+        ON Projeto.codigo = Atividade.codprojeto;
     '''
     
     cur.execute(select_script)
     conn.commit()
+    
+    records = cur.fetchall()
+    return records
+    
+   
 
-selectProjetoJoinAtividades()
+results = selectProjetoJoinAtividades()
+
+for row in results:
+    print(row)
 
 cur.close()
 conn.close()
